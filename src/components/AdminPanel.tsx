@@ -25,7 +25,7 @@ function AdminLogin({ onLogin }: AdminLoginProps) {
     setIsLoading(true);
 
     try {
-      if (formData.email === "admin@luxurycars.com" && formData.password === "admin123") {
+      if (formData.email === "admin@luxurycars.com" && formData.password === "VKLA9SJt@22") {
         toast.success("Login successful!");
         localStorage.setItem("adminAuth", "true");
         onLogin(true);
@@ -99,13 +99,13 @@ function AdminLogin({ onLogin }: AdminLoginProps) {
             </button>
           </form>
 
-          <div className="mt-6 p-4 bg-gray-700 rounded-lg">
+{/*           <div className="mt-6 p-4 bg-gray-700 rounded-lg">
             <p className="text-xs text-gray-300 text-center">
               <strong>Demo Credentials:</strong><br />
               Email: admin@luxurycars.com<br />
               Password: admin123
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
