@@ -68,7 +68,7 @@ export default function CarDetails({ carId, onBack, onBook }: CarDetailsProps) {
                 <ChevronRight className="w-5 h-5" />
               </button>
             </div>
-            <div className={`grid gap-4 ${car.images.length >= 3 ? "grid-cols-3" : "grid-cols-1 sm:grid-cols-2"}`}>
+            <div className={`grid gap-4 ${car.images.length >= 2 ? "grid-cols-3" : "grid-cols-1 sm:grid-cols-2"}`}>
   {car.images.map((image, index) => (
     <div key={index} className="aspect-video rounded-lg overflow-hidden">
       <img
