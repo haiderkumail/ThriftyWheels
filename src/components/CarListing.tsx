@@ -31,13 +31,13 @@ export default function CarListing({ category, brand, onCarSelect, onBack }: Car
 
   const handleCall = (e: React.MouseEvent) => {
     e.stopPropagation();
-    window.open("tel:+971501234567", "_self");
+    window.open("tel:+971504412269", "_self");
   };
 
   const handleWhatsApp = (e: React.MouseEvent, carName: string) => {
     e.stopPropagation();
     const message = `Hi! I'm interested in renting the ${carName}. Can you provide more details?`;
-    const whatsappUrl = `https://wa.me/971501234567?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/971504412269?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 
