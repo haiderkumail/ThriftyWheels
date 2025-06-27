@@ -68,17 +68,18 @@ export default function CarDetails({ carId, onBack, onBook }: CarDetailsProps) {
                 <ChevronRight className="w-5 h-5" />
               </button>
             </div>
-            <div className="grid grid-cols-3 gap-4">
-              {car.images.slice(0, 3).map((image, index) => (
-                <div key={index} className="aspect-video rounded-lg overflow-hidden">
-                  <img
-                    src={image}
-                    alt={`${car.name} ${index + 1}`}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer"
-                  />
-                </div>
-              ))}
-            </div>
+            <div className={`grid gap-4 ${car.images.length >= 3 ? "grid-cols-3" : "grid-cols-1 sm:grid-cols-2"}`}>
+  {car.images.map((image, index) => (
+    <div key={index} className="aspect-video rounded-lg overflow-hidden">
+      <img
+        src={image}
+        alt={`${car.name} ${index + 1}`}
+        className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer"
+      />
+    </div>
+  ))}
+</div>
+
           </div>
 
           {/* Details */}
