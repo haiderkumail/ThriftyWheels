@@ -58,8 +58,8 @@ const handleNavClick = (id: string) => {
               className="h-16 w-auto object-contain"
             />
             <div className="flex items-end space-x-2">
-              <div className="text-2xl font-bold text-yellow-400">THRIFTY WHEELS</div>
-              <div className="text-sm text-gray-300 pb-1">Dubai</div>
+                <div className="text-yellow-400 font-bold text-xl sm:text-2xl">THRIFTY WHEELS</div>
+                <div className="text-gray-300 pb-1 text-xs sm:text-sm">Dubai</div>
             </div>
 
           </div>
