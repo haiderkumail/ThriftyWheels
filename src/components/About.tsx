@@ -13,7 +13,7 @@ export default function About() {
     {
       icon: "🚗",
       title: "Flexible Rental",
-      description: "Daily, weekly, and monthly rental options to suit your needs"
+      description: "Daily, weekly, and monthly rental options to suit your needs. Also deals in Crypto Currency"
     },
     {
       icon: "🌟",
